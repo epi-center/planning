@@ -1,8 +1,8 @@
 # Understand Covid
 
-![gitter](https://img.shields.io/gitter/room/understand-covid/community?style=flat-square)
-![jogl](https://img.shields.io/static/v1?label=join%20us&message=JOGL&color=red&link=https://app.jogl.io/project/169&style=flat-square)
-![license](https://img.shields.io/github/license/understand-covid/proposal?style=flat-square)
+[![gitter](https://img.shields.io/gitter/room/understand-covid/community?style=flat-square)](https://gitter.im/understand-covid/community)
+[![jogl](https://img.shields.io/static/v1?label=join%20us%20on&message=JOGL&color=red&link&style=flat-square)](https://app.jogl.io/project/169)
+[![license](https://img.shields.io/github/license/understand-covid/proposal?style=flat-square)](https://github.com/understand-covid/proposal/blob/master/LICENSE)
 
 We would like to build a toolkit that makes building 'responsible' epidemiological forecasting models easy and computationally efficient. It should make sane assumptions about variable distributions, include ways to integrate many types of empirical data in a straightforward way, allow for sensitivity analysis and understanding of uncertainty, capture possible dynamics of different types of suppression, mitigation and control tactics. 
 
@@ -80,10 +80,10 @@ The former leans on GLEAMviz, which is likely the closest model to what we aim t
   
   If you are interested in collaborating or helping fund this project:
 
-![email](https://img.shields.io/static/v1?label=email&message=johnurbanik@gmail.com&color=red&link=mailto:johnurbanik@gmail.com&style-flat-square)
-![twitter](https://img.shields.io/twitter/follow/johnurbanik?label=%40johnurbanik&style=flat-square)
-![gitter](https://img.shields.io/gitter/room/understand-covid/community?style=flat-square)
-![jogl](https://img.shields.io/static/v1?label=join%20us&message=JOGL&color=red&link=https://app.jogl.io/project/169&style=flat-square)
+[![email](https://img.shields.io/static/v1?label=email&message=johnurbanik@gmail.com&color=red&&style-flat-square)](mailto:johnurbanik@gmail.com)
+[![twitter](https://img.shields.io/twitter/follow/johnurbanik?label=%40johnurbanik&style=flat-square)](https://twitter.com/johnurbanik)
+[![gitter](https://img.shields.io/gitter/room/understand-covid/community?style=flat-square)](https://gitter.im/understand-covid/community)
+[![jogl](https://img.shields.io/static/v1?label=join%20us%20on&message=JOGL&color=red&link&style=flat-square)](https://app.jogl.io/project/169)
   
   
     
