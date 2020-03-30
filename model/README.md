@@ -2,7 +2,7 @@
 
 As a jumping off point for collaboration, we build a compartmental model with some relaxed assumptions. These assumptions are detailed [here](https://github.com/understand-covid/proposal/tree/master/model/Assumptions.md).
 
-The model is indebted to a substantial amount of prior art, some of which is discussed [here](https://github.com/understand-covid/proposal/tree/master/model/Prior+Art.md). 
+The model is indebted to a substantial amount of prior art, some of which is discussed [here](https://github.com/understand-covid/proposal/tree/master/model/Prior%20Art.md). 
 
 Furthermore, the authors would like to acknowledge [Neher Lab](https://github.com/neherlab/covid19_scenarios). Without their modeling as inspiration and the data sets they have cultivated, this task would have been substantially more challenging.  
 

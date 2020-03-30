@@ -17,7 +17,7 @@ The team believes that COVID-19 illustrates many of the issues that exist in epi
 
 It is our belief that the current state of epidemiological modeling factors pretty directly into the poor containment of COVID-19. Epidemiological models that seem to have been used for risk assessment:
 
-  1. Broadly rely on estimated R0 values. R0 is a notoriously fickle quantity [1], and does not provide sufficient information to assess risk in any scenario. While the quantity is useful in the right hands, it is easily misconstrued and abused.
+  1. Broadly rely on estimated R0 values. R0 is a notoriously fickle quantity [[1]], and does not provide sufficient information to assess risk in any scenario. While the quantity is useful in the right hands, it is easily misconstrued and abused.
   2. Often do not include robust estimates of uncertainty. Some analysis is often done via sensitivity analysis, but too many variables are left non-random and the state space is not sufficiently explored. 
   3. Rely on some set of assumptions of homogeneity. This varies from simulations that are completely deterministic based on initial conditions to others that relax a few assumptions of homogeneity and inject stochasticity in a handful of points in a relatively simple model. Even sophisticated individual/agent based models often do not do a good job of modeling heterogeneity in behavior or oversimplify the mechanics of transmission. 
   4. Broadly do not take into account the differing properties of different populations. While some models include spatial heterogeneity or model individuals, these often make unrealistic assumptions about social graphs or are wrongfully cross applied to another population with different cultural norms, population density, and public health statuses.
@@ -46,7 +46,7 @@ In order to build this general purpose toolkit, we need many different component
 
 4. Improved data availability for realtime diagnostics.
 
-    The spread of disease should be have a trail that is highly available and reliable. Much like data exhaust in the corporate context, proper modeling and data engineering is necessary. It is unacceptable that the most commonly used data format for tracking COVID-19 growth changed data formats without notice in the middle of the epidemic [2]. It is unacceptable that there is a preponderance of missing data, and that datasets lack sufficient information to determine what is incomplete or inaccurate. It is unacceptable that even counties that do keep up to date records often do not follow the same format and do not make historical data available [3]. It should be the case that every population's response to mitigation measures can be measured in a consistent manner. While we can do things like measure turnstile data [4], a tool that makes this data available in a less ad-hoc way should exist.
+    The spread of disease should be have a trail that is highly available and reliable. Much like data exhaust in the corporate context, proper modeling and data engineering is necessary. It is unacceptable that the most commonly used data format for tracking COVID-19 growth changed data formats without notice in the middle of the epidemic [[2]]. It is unacceptable that there is a preponderance of missing data, and that datasets lack sufficient information to determine what is incomplete or inaccurate. It is unacceptable that even counties that do keep up to date records often do not follow the same format and do not make historical data available [[3]]. It should be the case that every population's response to mitigation measures can be measured in a consistent manner. While we can do things like measure turnstile data [[4]], a tool that makes this data available in a less ad-hoc way should exist.
   
 5. Improved interpretability.
   
@@ -58,9 +58,11 @@ In order to build this general purpose toolkit, we need many different component
   
   As a first contribution, the primary author has developed an [initial compartmental model for COVID-19](https://github.com/understand-covid/proposal/tree/master/model) that adds additional states and more stochastic variables, as well as using biologically motivated distributions for parameters. It allows for modeling of a few different mitigation strategies. This model is not meant to be used as a tool for making predictions as of now; it is merely a proof of concept. Documentation of this model and the source code for it are available in this repository.
   
+  Moving forward, we plan to start to scope out work on an initial set of software based tools to put together epidemiological models - we aim to be influenced by and build upon great projects like scikit-learn, Pyro.ai, Spark, and Prefect.io.
+  
   This proposal is open to feedback and criticism - the authors are not authorities on the state of epidemiological modeling by any means, and corrections and exposure to relevant prior art are appreciated. In the coming days, we plan to update this proposal with more actionable next steps.
   
-  If you are interested in collaborating, please contact John Urbanik at [johnurbanik@gmail.com](mailto:johnurbanik@gmail.com)/[@jurbanik](https://twitter.com/johnurbanik) or add an issue on this repository.
+  If you are interested in collaborating or helping fund this project, please contact John Urbanik at [johnurbanik@gmail.com](mailto:johnurbanik@gmail.com)/[@jurbanik](https://twitter.com/johnurbanik) or add an issue on this repository.
   
   
     
