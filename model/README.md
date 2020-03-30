@@ -1,6 +1,10 @@
 # Framework
 
-As a jumping off point for collaboration, we build a compartmental model with some relaxed assumptions.
+As a jumping off point for collaboration, we build a compartmental model with some relaxed assumptions. These assumptions are detailed [here](https://github.com/understand-covid/proposal/tree/master/model/Assumptions.md).
+
+The model is indebted to a substantial amount of prior art, some of which is discussed [here](https://github.com/understand-covid/proposal/tree/master/model/Prior+Art.md). 
+
+Furthermore, the authors would like to acknowledge [Neher Lab](https://github.com/neherlab/covid19_scenarios). Without their modeling as inspiration and the data sets they have cultivated, this task would have been substantially more challenging.  
 
 This model is meant to be one of the first steps in building a toolkit for more robust, general purpose epedimiological modeling. It should not be used for policy decisions in its current state.
 
