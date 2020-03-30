@@ -1,4 +1,10 @@
-# A proposal for deep collaboration in epidemiological modeling.
+# Understand Covid
+
+We would like to build a toolkit that makes building 'responsible' epidemiological forecasting models easy and computationally efficient. It should make sane assumptions about variable distributions, include ways to integrate many types of empirical data in a straightforward way, allow for sensitivity analysis and understanding of uncertainty, capture possible dynamics of different types of suppression, mitigation and control tactics. 
+
+With sufficient resources, we would also try to design systems that maintain up to date, easily ingestible, empirical data on population level statistics ranging from demography and network connectedness on a granular level to granular public health data.
+
+## A proposal for deep collaboration in epidemiological modeling.
 
 Over the last three months, we've seen an alarming failure of the publically available epidemiological models to forecast the spread of COVID-19 through the world. While many epidemiologists warned early on that there was the potential for millions of deaths globally, most of those estimations were based on a much slower spread of the disease than has transpired in Iran, Lombardy, Spain, New York, and a growing number of other locations. Ultimately, the CFR and IFR that have been predicted early on may be accurate, but the threat that this pandemic could infect the entire globe could result in death tolls in the tens or hundreds of millions.
 
