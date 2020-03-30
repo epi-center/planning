@@ -50,7 +50,11 @@ In order to build this general purpose toolkit, we need many different component
   
 5. Improved interpretability.
   
-    There is a risk that models that we build that incorporate all of this information become less interpretable, rather than more. We must design systems that enable people without deep understanding of the model to make responsible decisions based on outputs. This means development of a new set of metrics and a new set of tools for risk assessment. We believe that the types of mitigation strategies that a community can employ and existential risks they face should all be encoded into the model. For example, social distancing should have a different impact on the model than travel restrictions. Awareness campaigns of the virus at large and preventative measures should be modeled differently. These strategies should be encoded simply and in a way that the inputs can be measured directly. They should be reactive to the population. 
+    There is a risk that models that we build that incorporate all of this information become less interpretable, rather than more. We must design systems that enable people without deep understanding of the model to make responsible decisions based on outputs. This means development of a new set of metrics and a new set of tools for risk assessment. We believe that the types of mitigation strategies that a community can employ and existential risks they face should all be encoded into the model. For example, social distancing should have a different impact on the model than travel restrictions. Awareness campaigns of the virus at large and preventative measures should be modeled differently. These strategies should be encoded simply and in a way that the inputs can be measured directly. They should be reactive to the population.
+    
+Several other projects have started to undertake some of these challenges, including Epidemicforecasting.org and Kaggle [[5]], [[6]]. Both have started to cultivate useful datasets that could help quantify the effects above, but are likely to need to be manually maintained and are of varying quality and ingestibility.
+
+The former leans on GLEAMviz, which is likely the closest model to what we aim to build [[7]]. However, it is closed source, does not have demographic breaks (just geographical ones), doesn't have good support for mitigation strategies or distributional assumptions, does not have good support for presets, and requires building things through a GUI - it is not interoperable with existing data stacks.
   
 ## Approaches
 
@@ -71,3 +75,6 @@ In order to build this general purpose toolkit, we need many different component
 [2]: https://github.com/CSSEGISandData/COVID-19/issues
 [3]: https://www1.nyc.gov/site/doh/covid/covid-19-main.page
 [4]: https://github.com/toddwschneider/nyc-subway-turnstile-data
+[5]: http://epidemicforecasting.org/
+[6]: https://www.kaggle.com/covid-19-contributions
+[7]: http://www.gleamviz.org/
