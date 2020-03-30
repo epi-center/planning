@@ -1,0 +1,13 @@
+name: env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - jupyterlab
+  - matplotlib
+  - scipy
+  - xlrd
+  - pip:
+      - streamlit
+
