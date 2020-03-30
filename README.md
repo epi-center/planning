@@ -1,5 +1,9 @@
 # Understand Covid
 
+![gitter](https://img.shields.io/gitter/room/understand-covid/community?style=flat-square)
+![jogl](https://img.shields.io/static/v1?label=join%20us&message=JOGL&color=red&link=https://app.jogl.io/project/169&style=flat-square)
+![license](https://img.shields.io/github/license/understand-covid/proposal?style=flat-square)
+
 We would like to build a toolkit that makes building 'responsible' epidemiological forecasting models easy and computationally efficient. It should make sane assumptions about variable distributions, include ways to integrate many types of empirical data in a straightforward way, allow for sensitivity analysis and understanding of uncertainty, capture possible dynamics of different types of suppression, mitigation and control tactics. 
 
 With sufficient resources, we would also try to design systems that maintain up to date, easily ingestible, empirical data on population level statistics ranging from demography and network connectedness on a granular level to granular public health data.
@@ -72,7 +76,14 @@ The former leans on GLEAMviz, which is likely the closest model to what we aim t
   
   This proposal is open to feedback and criticism - the authors are not authorities on the state of epidemiological modeling by any means, and corrections and exposure to relevant prior art are appreciated. In the coming days, we plan to update this proposal with more actionable next steps.
   
-  If you are interested in collaborating or helping fund this project, please contact John Urbanik at [johnurbanik@gmail.com](mailto:johnurbanik@gmail.com)/[@jurbanik](https://twitter.com/johnurbanik) or add an issue on this repository.
+## Contact / Collaboration
+  
+  If you are interested in collaborating or helping fund this project:
+
+![email](https://img.shields.io/static/v1?label=email&message=johnurbanik@gmail.com&color=red&link=mailto:johnurbanik@gmail.com&style-flat-square)
+![twitter](https://img.shields.io/twitter/follow/johnurbanik?label=%40johnurbanik&style=flat-square)
+![gitter](https://img.shields.io/gitter/room/understand-covid/community?style=flat-square)
+![jogl](https://img.shields.io/static/v1?label=join%20us&message=JOGL&color=red&link=https://app.jogl.io/project/169&style=flat-square)
   
   
     
