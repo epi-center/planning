@@ -6,7 +6,7 @@ Jing Li, et. al. The Failure of R0. [Comput Math Methods Med.](https://www.ncbi.
   - Survey highlighting that R0 estimation is extremely fickle, showing how different methods of estimation can result in very different results. It shows that epidemic infection can still persist if R0 < 1, and R0 is not a measure of the necessary control effort. It also cites research showing that empirical methods of collecting r0 through contact tracing prodcues misleading estimates. It suggests that policy decisions should not be based on r0, and suggests that the urgent need is a simple but accurate measure of disease spread that can be understood by nonmathemeticians.
 
 
-Katrin Haessler, et. al. A dynamic Bayesian Markov model for health economic evaluations of interventions in infectious disease. [BMC Medical Research Methodology](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-018-0541-7)
+Katrin Haeussler, et. al. A dynamic Bayesian Markov model for health economic evaluations of interventions in infectious disease. [BMC Medical Research Methodology](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-018-0541-7)
   - Engages with the idea of relaxing assumptions used in ODEs due to the impact on probabistic sensitivity analysis. It suggests that these relaxations are necessary in order to do good risk assessment. It uses a Bayesian framework for parameter calibration.
   
 Laurent Hébert-Dufresne, et. al. Spread of infectious disease and social awareness as parasitic contagions on clustered networks.[arXiv](https://arxiv.org/abs/2003.10604)
