@@ -149,10 +149,10 @@ We should build a data warehouse / data exchange that houses these datasets and 
       - Time series updates from municipalities should be easily input, without the municipality needing to develop their own data pipeline. 
   - Data warehouse browseable by parameter. All historical data of parameter estimates maintained
     - Build a 'best guess model' for each parameter that takes the various data sources and combines them
-    - Allow accessing the results and links to individual citations
+    - Allow accessing the specific studies and links to individual citations, so that researchers can easily cite things in their work
     - Build tool that allows for bayesian regression over several parameters + some user specified distributions in order to estimate distribution of another parameter
       - This should allow researchers to combine private datasets with publically available ones, even if they want to run a separate model than ours
-    - Allow tool to request a new type of parameter be added to the dataset
+    - Allow requesting a new type of parameter be added to the dataset
     
 In addition to fundamental/source data, we should build a set of data pipelines on top of these datasets.
   - Pipelines should be reviewed before being queued for periodic computation. Ideally, pipelines could be re-run when their dependency datasets are changed.
