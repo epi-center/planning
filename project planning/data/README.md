@@ -48,7 +48,9 @@ Where possible, we could even develop data visualizations on top of the data, al
 
 ## Details
 
-For now, we focus on respiratory illnesses, though this should be expanded to be more general purpose. The datasets that could be helpful include (but are not limited to - please feel free to suggest additions):
+For now, we focus on respiratory illnesses, though this should be expanded to be more general purpose. The datasets that could be helpful include (but are not limited to - please feel free to suggest additions).
+
+#### Potential datasets/parameters
 
 - Demographics
   - Static / Slow Changing
@@ -109,7 +111,9 @@ For now, we focus on respiratory illnesses, though this should be expanded to be
 - Ancillary data
   - Evidence of reinfection
   - Evidence of inter-species transmission
-  
+
+#### Parameter modeling goals
+
 The more granular that each of these datasets can get, the better. This includes granularity by age/population demographic, and by distribution. We need a way to qualify/quantify a given dataset's usefulness / how much we can trust it:
   - How likely is this to generalize to other populations?
     - Is the data broken down demographically?
@@ -133,7 +137,9 @@ The more granular that each of these datasets can get, the better. This includes
       - Raw data
     - How recently was the experiment performed? How up to date are the time series?
     - How consistent was the measurement interval for time series is
-    
+
+#### Data exchange goals
+
 We should build a data warehouse / data exchange that houses these datasets and allows for both push and pull based submissions.
   - Researchers can submit a study along with the relevant summary statistics / raw data (optional).
     - The study will be added to the repository, but flagged for review
@@ -153,7 +159,9 @@ We should build a data warehouse / data exchange that houses these datasets and 
     - Build tool that allows for bayesian regression over several parameters + some user specified distributions in order to estimate distribution of another parameter
       - This should allow researchers to combine private datasets with publically available ones, even if they want to run a separate model than ours
     - Allow requesting a new type of parameter be added to the dataset
-    
+
+#### Data pipeline goals
+
 In addition to fundamental/source data, we should build a set of data pipelines on top of these datasets.
   - Pipelines should be reviewed before being queued for periodic computation. Ideally, pipelines could be re-run when their dependency datasets are changed.
   - Pipelines can include functions that pull source level data.
@@ -161,6 +169,8 @@ In addition to fundamental/source data, we should build a set of data pipelines 
   - Pipelines are also responsible for producing distributional data (i.e. given a few datasets, produce the posterior probability distribution of a parameter).
   - Pipelines can compute coherence from multiple datasets and flag them for review in an automated fashion (as below).
   - Any pipeline that produces a new input to the data warehouse should be traceable (VCS on pipelines?)
+  
+#### Data validation goals
       
 Additionally, we should try to assess where the weaknesses in our current data lie:
   - Build a (reddit-style?) tool that allows researchers to submit what they think the highest priority dataset to produce is
