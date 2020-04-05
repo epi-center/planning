@@ -4,9 +4,15 @@
 [![jogl](https://img.shields.io/static/v1?label=join%20us%20on&message=JOGL&color=red&link&style=flat-square)](https://app.jogl.io/project/169)
 [![license](https://img.shields.io/github/license/understand-covid/proposal?style=flat-square)](https://github.com/understand-covid/proposal/blob/master/LICENSE)
 
-We would like to build a toolkit that makes building 'responsible' epidemiological forecasting models easy and computationally efficient. It should make sane assumptions about variable distributions, include ways to integrate many types of empirical data in a straightforward way, allow for sensitivity analysis and understanding of uncertainty, capture possible dynamics of different types of suppression, mitigation and control tactics. 
+We would like to build an ecosystem that makes it possible for epidemiologists to more rapidly build 'responsible' forecasts, analysis, and understand the health economics of various interventions. This consists of several components, including a modeling toolkit, data exchange, and communication guidelines.
 
-With sufficient resources, we would also try to design systems that maintain up to date, easily ingestible, empirical data on population level statistics ranging from demography and network connectedness on a granular level to granular public health data.
+The modeling toolkit will be based on probabilistic programming extensions to existing models. It should make sane assumptions about variable distributions, include ways to integrate many types of empirical data in a straightforward way, allow for sensitivity analysis and understanding of uncertainty, and capture possible dynamics of different types of suppression, mitigation and control tactics. Epidemiologists should be able to mix and match different components of a modeling pipeline as drawn from this toolkit in order to develop their own models.
+
+With sufficient resources, we would also try to design a data exchange that maintains up to date, easily ingestible, empirical data on population level statistics ranging from demography and network connectedness on a granular level to granular clinical, virological and empirical data. Where possible, we would like to make this data available as full distributions, rather than just single summary statistics.
+
+We would like to develop best practices for disseminating the results of modeling exercises in terms of how the public is likely to percieve the published research. We aim to give researchers more confidence in publishing and collaborating, and help them reduce the chances that their research is abused or misreported.
+
+A more detailed vision and actionable next steps for the ecosystem we are building is available [here](project%20planning). We want the development process to be based on the principles of open science, and welcome experts (especially epidemiologists) to give feedback and contribute. The rest of this document serves to illustrate the motivations for this project.
 
 ## A proposal for deep collaboration in epidemiological modeling.
 
@@ -25,7 +31,7 @@ Media coverage of the virus has also posed challenges in terms of risk assessmen
 
 The team believes that COVID-19 illustrates many of the issues that exist in epidemiological modeling and public health risk assessment, and wishes to use the momentum that exists right now to garner more investment into modeling, tooling, and data systems so that the ongoing mitigation efforts and handling of future epidemics can be done in a more measured way.
 
-It is our belief that the current state of epidemiological modeling factors pretty directly into the poor containment of COVID-19. Epidemiological models that seem to have been used for risk assessment:
+It is our belief that the current state of epidemiological modeling factors pretty directly into the poor containment of COVID-19. Many epidemiological models that seem to have been used for risk assessment:
 
   1. Broadly rely on estimated R0 values. R0 is a notoriously fickle quantity [[1]], and does not provide sufficient information to assess risk in any scenario. While the quantity is useful in the right hands, it is easily misconstrued and abused.
   2. Often do not include robust estimates of uncertainty. Some analysis is often done via sensitivity analysis, but too many variables are left non-random and the state space is not sufficiently explored. 
@@ -34,7 +40,7 @@ It is our belief that the current state of epidemiological modeling factors pret
   5. Do not do a good job of allowing decision makers to see the impact of potential mitigation measures. The impact of mitigation measures on model dynamics is often left to speculation, adding some manually estimated damping term on growth. Without deep understanding of the model in question, it is hard to understand the temporal sensitivity of measures or understand the difference in effectiveness of different types of mitigation strategies. Further, given that uncertainty estimates are rare, any well designed inclusion of mitigation strategies into models can still lead to poor decision making.
   6. Are often built post-hoc, after the data from an outbreak is well understood. While this is understandable, many models suffer from overfitting and confirmation bias.
     
-As such, we believe that it is time to build a more robust framework for modeling epidemiological risk, starting from first principles as often as possible. We believe that a general purpose toolkit should exist that allows the modeling of any new virus in a way that includes new information seamlessly as it is available and gives tools for assessing mitigation strategies. This toolkit should allow for the use of multiple styles of models (including looking at how much different models diverge) and include uncertainty estimates by default. This is a huge undertaking, but an incredibly valuable one.
+As such, we believe that it is time to build a more robust framework for modeling epidemiological risk, starting from first principles as often as possible. We believe that an ecosystem should exist that allows the modeling of any new virus in a way that includes new information seamlessly as it is available and gives tools for assessing mitigation strategies. This toolkit should allow for the use of multiple styles of models (including looking at how much different models diverge) and include uncertainty estimates by default. This is a huge undertaking, but an incredibly valuable one.
 
 ## Components
 
@@ -62,6 +68,11 @@ In order to build this general purpose toolkit, we need many different component
   
     There is a risk that models that we build that incorporate all of this information become less interpretable, rather than more. We must design systems that enable people without deep understanding of the model to make responsible decisions based on outputs. This means development of a new set of metrics and a new set of tools for risk assessment. We believe that the types of mitigation strategies that a community can employ and existential risks they face should all be encoded into the model. For example, social distancing should have a different impact on the model than travel restrictions. Awareness campaigns of the virus at large and preventative measures should be modeled differently. These strategies should be encoded simply and in a way that the inputs can be measured directly, and should be reactive to the population. Additionally, the outputs and inputs should be able to be connected to other systems directly without the need for user intervention.
     
+    
+6. Improved guidelines about how to communicate results.
+
+    Many researchers have expressed frustration that their models have been taken out of context and sensationalized. We should build tools that help researchers state the takeaways from their studies in clear words that are resistant to propagandizing, and provide a review process for the communication. Abstracts are not sufficient when reserach is being put into the public domain or when a paper has an accompanying set of visualizations. 
+    
 Several other projects have started to undertake some of these challenges, including Epidemicforecasting.org and Kaggle [[5]], [[6]]. Both have started to cultivate useful datasets that could help quantify the effects above, but are likely to need to be manually maintained and are of varying quality and ingestibility.
 
 The former leans on GLEAMviz, which is likely the closest model to what we aim to build [[7]]. However, it is closed source, does not have demographic breaks (just geographical ones), doesn't have good support for mitigation strategies or distributional assumptions, does not have good support for presets, and requires building things through a GUI - it is not interoperable with existing data stacks.
@@ -70,11 +81,11 @@ The former leans on GLEAMviz, which is likely the closest model to what we aim t
 
   We believe that tools accomplishing any of the goals above should be a public good and available to public health officials throughout the world. As such, we suggest an open science approach. We are actively looking for collaborators from all disciplines who believe they have something to add. 
   
-  As a first contribution, the primary author has developed an [initial compartmental model for COVID-19](https://github.com/understand-covid/proposal/tree/master/model) that adds additional states and more stochastic variables, as well as using biologically motivated distributions for parameters. It allows for modeling of a few different mitigation strategies. This model is not meant to be used as a tool for making predictions as of now; it is merely a proof of concept. Documentation of this model and the source code for it are available in this repository.
+  As a first contribution, the primary author has developed an [initial compartmental model for COVID-19](model) that adds additional states and more stochastic variables, as well as using biologically motivated distributions for parameters. It allows for modeling of a few different mitigation strategies. This model is not meant to be used as a tool for making predictions as of now; it is merely a proof of concept. Documentation of this model and the source code for it are available in this repository.
   
-  Moving forward, we plan to start to scope out work on an initial set of software based tools to put together epidemiological models - we aim to be influenced by and build upon great projects like scikit-learn, Pyro.ai, Spark, and Prefect.io.
+  Moving forward, we plan to start to scope out work on an initial set of software based tools to put together epidemiological models and datasets - we aim to build the 'scikit-learn' for epidemiology and also build a data exchange of useful data and discussion around parameters. Work on scoping out these projects can be found [here](project%20planning).
   
-  This proposal is open to feedback and criticism - the authors are not authorities on the state of epidemiological modeling by any means, and corrections and exposure to relevant prior art are appreciated. In the coming days, we plan to update this proposal with more actionable next steps.
+  This proposal is open to feedback and criticism - the authors are not authorities on the state of epidemiological modeling by any means, and corrections and exposure to relevant prior art are appreciated.
   
 ## Contact / Collaboration
   
