@@ -6,8 +6,13 @@ dependencies:
   - python=3.8
   - jupyterlab
   - matplotlib
+  - networkx
+  - pip
   - scipy
+  - seaborn
   - xlrd
+
   - pip:
       - streamlit
+      - pyprob
 
