@@ -142,7 +142,8 @@ The more granular that each of these datasets can get, the better. This includes
 
 We should build a data warehouse / data exchange that houses these datasets and allows for both push and pull based submissions.
   - Researchers can submit a study along with the relevant summary statistics / raw data (optional).
-    - The study will be added to the repository, but flagged for review
+    - A backend of something like dataverse with a controlled vocabulary will house the studies themselves
+    - The study will be added to the data warehouse, but flagged for review
     - Build a review prioritization scheme
       - Other researchers can vote on priority of review
       - Reviews in areas of current data weakness prioritized
@@ -155,7 +156,7 @@ We should build a data warehouse / data exchange that houses these datasets and 
       - Time series updates from municipalities should be easily input, without the municipality needing to develop their own data pipeline. 
   - Data warehouse browseable by parameter. All historical data of parameter estimates maintained
     - Build a 'best guess model' for each parameter that takes the various data sources and combines them
-    - Allow accessing the specific studies and links to individual citations, so that researchers can easily cite things in their work
+    - Allow accessing the specific studies and links to individual citations, so that researchers can easily cite things in their work (lean on dataverse and similar projects for this functionality)
     - Build tool that allows for bayesian regression over several parameters + some user specified distributions in order to estimate distribution of another parameter
       - This should allow researchers to combine private datasets with publically available ones, even if they want to run a separate model than ours
     - Allow requesting a new type of parameter be added to the dataset
